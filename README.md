@@ -1,2 +1,2 @@
-# create_csv_layout_for_WHIP_bulk_upload_WHN
+# Create a .csv file to upload data into WHIP from an excel layout
 Simple Shiny app to upload an excel file with different sheets and download a .csv that can be uploaded into WHIP to complete a bulk upload
