@@ -8,44 +8,44 @@ library(stringi)
 
 # open the different sheets
 
-event<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                  sheet = "Event",
-                  col_types = "text")
-
-
-obs<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                sheet = "Observation",
-                col_types = "text")
-
-spec<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                 sheet = "Specimen",
-                 col_types = "text")
-
-
-necropsy<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                     sheet = "Necropsy",
-                     col_types = "text")
-
-diag<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                 sheet = "Diagnostics",
-                 col_types = "text")
-
-# tme<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-#                 sheet = "TME",
+# event<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                   sheet = "Event",
+#                   col_types = "text")
+# 
+# 
+# obs<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                 sheet = "Observation",
 #                 col_types = "text")
-
-
-samples<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                    sheet = "Samples",
-                    col_types = "text")
-
-tests<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                  sheet = "Tests",
-                  col_types = "text")
-
-diagnosis<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
-                      sheet = "Diagnosis",
-                      col_types = "text")
+# 
+# spec<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                  sheet = "Specimen",
+#                  col_types = "text")
+# 
+# 
+# necropsy<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                      sheet = "Necropsy",
+#                      col_types = "text")
+# 
+# diag<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                  sheet = "Diagnostics",
+#                  col_types = "text")
+# 
+# # tme<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+# #                 sheet = "TME",
+# #                 col_types = "text")
+# 
+# 
+# samples<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                     sheet = "Samples",
+#                     col_types = "text")
+# 
+# tests<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                   sheet = "Tests",
+#                   col_types = "text")
+# 
+# diagnosis<-read_excel("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/Bulk_upload_layout_excel_DTRA_Cambodia_Laos_Vietnam.xlsx",
+#                       sheet = "Diagnosis",
+#                       col_types = "text")
 
 
 # fix colnames. Create function

@@ -40,42 +40,46 @@ server <- function(input, output) {
         
         content = function(file) {
             
-            # event<-read_excel(input$datain$datapath, 
-            #                   sheet = "Event", 
-            #                   col_types = "text")
-            # 
-            # 
-            # obs<-read_excel(input$datain$datapath, 
-            #                 sheet = "Observation", 
-            #                 col_types = "text")
-            # 
-            # spec<-read_excel(input$datain$datapath, 
-            #                  sheet = "Specimen", 
-            #                  col_types = "text")
-            # 
-            # 
-            # necropsy<-read_excel(input$datain$datapath, 
-            #                      sheet = "Necropsy", 
-            #                      col_types = "text")
-            # 
-            # diag<-read_excel(input$datain$datapath, 
-            #                  sheet = "Diagnostics", 
-            #                  col_types = "text")
-            # 
-            # 
-            # samples<-read_excel(input$datain$datapath, 
-            #                     sheet = "Samples", 
-            #                     col_types = "text")
-            # 
-            # tests<-read_excel(input$datain$datapath, 
-            #                   sheet = "Tests", 
-            #                   col_types = "text")
-            # 
-            # diagnosis<-read_excel(input$datain$datapath, 
-            #                       sheet = "Diagnosis", 
-            #                       col_types = "text")
+            event<-read_excel(input$datain$datapath,
+                              sheet = "Event",
+                              col_types = "text")
+
+
+            obs<-read_excel(input$datain$datapath,
+                            sheet = "Observation",
+                            col_types = "text")
+
+            spec<-read_excel(input$datain$datapath,
+                             sheet = "Specimen",
+                             col_types = "text")
+
+
+            necropsy<-read_excel(input$datain$datapath,
+                                 sheet = "Necropsy",
+                                 col_types = "text")
+
+            diag<-read_excel(input$datain$datapath,
+                             sheet = "Diagnostics",
+                             col_types = "text")
+
+
+            samples<-read_excel(input$datain$datapath,
+                                sheet = "Samples",
+                                col_types = "text")
+
+            tests<-read_excel(input$datain$datapath,
+                              sheet = "Tests",
+                              col_types = "text")
+
+            diagnosis<-read_excel(input$datain$datapath,
+                                  sheet = "Diagnosis",
+                                  col_types = "text")
             
-            source("/Users/DMontecino/Desktop/OneDrive - Wildlife Conservation Society/BULK UPLOAD/DTRA_CAMBODIA_LAOS_VIETNAM/create_csv_layout_for_WHIP_bulk_upload_WHN/Create_csv_to_upload_from_excel_layout.R")
+            source("Create_csv_to_upload_from_excel_layout.R")
+            
+            
+            
+            
             
             write.csv(out6, file, row.names = F, na="")
             
